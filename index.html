@@ -25,11 +25,13 @@
 
     <div class="button-container">
 		<a>Download for MouseClock.exe, a simple program that displays the time in 24h format beside your mouse cursor.</a>
-        <button id="downloadButton1">Download (1,029 KB)</button>
+        <button id="mouseClockDownload">Download (1,029 KB)</button>
 		<a>Download for MousePosition.exe, a program that shows the X and Y position of your mouse beside the cursor.</a>
-        <button id="downloadButton2">Download (1,029 KB)</button>
+        <button id="mousePositionDownload">Download (1,029 KB)</button>
 		<a>Download for CheckboxArt.exe, a program I created that displays a window with loads of checkboxes, which you can tick to create a splendid work of art.</a>
-        <button id="downloadButton3">Download (993 KB)</button>
+        <button id="checkboxArtDownload">Download (993 KB)</button>
+		<a>Download for DvD Mouse.exe, a little bit of code I made that moves the mouse cursor around like the DvD logo. (Press Escape to exit it)</a>
+		<button id="dvdMouseDownload">Download (871 KB)</button>
     </div>
 
     <div class="text-on-right">
@@ -49,16 +51,20 @@
         }
 
         // add event listeners to the buttons
-        document.getElementById('downloadButton1').addEventListener('click', function() {
+        document.getElementById('mouseClockDownload').addEventListener('click', function() {
             downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/MouseClock.exe');
         });
 
-        document.getElementById('downloadButton2').addEventListener('click', function() {
+        document.getElementById('mousePositionDownload').addEventListener('click', function() {
             downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/MousePosition.exe');
         });
 
-        document.getElementById('downloadButton3').addEventListener('click', function() {
+        document.getElementById('checkboxArtDownload').addEventListener('click', function() {
             downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/CheckboxArt.exe');
+        });
+		
+		document.getElementById('dvdMouseDownload').addEventListener('click', function() {
+            downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/DvD%20mouse.exe');
         });
     </script>
 </body>

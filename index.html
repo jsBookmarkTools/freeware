@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JJ's Freeware</title>
+    <style>
+        /* Style to position buttons vertically and add text on the right */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px; /* Adjust the margin as needed */
+        }
+
+        button {
+            margin-bottom: 5px; /* Adjust the margin as needed */
+        }
+
+        .text-on-right {
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1>Download Freeware Files</h1>
+
+    <div class="button-container">
+		<a>Download for MouseClock.exe, a simple program that displays the time in 24h format beside your mouse cursor.</a>
+        <button id="downloadButton1">Download (1,029 KB)</button>
+		<a>Download for MousePosition.exe, a program that shows the X and Y position of your mouse beside the cursor.</a>
+        <button id="downloadButton2">Download (1,029 KB)</button>
+		<a>Download for CheckboxArt.exe, a program I created that displays a window with loads of checkboxes, which you can tick to create a splendid work of art.</a>
+        <button id="downloadButton3">Download (993 KB)</button>
+    </div>
+
+    <div class="text-on-right">
+        <a href="https://www.google.com/search?q=define+freeware" target="_blank">"Freeware" is software created free of charge by random people on the Internet</a>. (Like me!)</p>
+		<a>All programs available above were created using AutoIt, a free and quite simple programming language.<br>
+		<a>You can visit AutoIt's page <a href="https://autoitscript.com/" target="_blank">here</a>.<br>
+        <a>Programs made by JJ_boi</a>
+    </div>
+
+    <script>
+        // function to create and trigger file downloads
+        function downloadFile(fileUrl) {
+            var link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = fileUrl.substring(fileUrl.lastIndexOf('/') + 1);
+            link.click();
+        }
+
+        // add event listeners to the buttons
+        document.getElementById('downloadButton1').addEventListener('click', function() {
+            downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/MouseClock.exe');
+        });
+
+        document.getElementById('downloadButton2').addEventListener('click', function() {
+            downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/MousePosition.exe');
+        });
+
+        document.getElementById('downloadButton3').addEventListener('click', function() {
+            downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/CheckboxArt.exe');
+        });
+    </script>
+</body>
+</html>

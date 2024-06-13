@@ -31,9 +31,11 @@
 		<a>Download for CheckboxArt.exe, a program I created that displays a window with loads of checkboxes, which you can tick to create a splendid work of art.</a>
         <button id="checkboxArtDownload">Download (993 KB)</button>
 		<a>Download for DvD Mouse.exe, a little bit of code I made that moves the mouse cursor around like the DvD logo. (Press Escape to exit it)</a>
-		<button id="dvdMouseDownload">Download (871 KB)</button>
+	<button id="dvdMouseDownload">Download (871 KB)</button>
 		<a>Download for Binary Converter.exe, a program for converting text to UTF-8 binary, and back again.</a>
-		<button id="binaryConverterDownload">Download (1,170 KB)</button>
+	<button id="binaryConverterDownload">Download (1,170 KB)</button>
+	    	<a>Downloada for CYBRARIAN Utility</a>
+	<button id="cybrarianUtilityDownload">Download (1,054 KB)</button>
     </div>
 
     <div class="text-on-right">
@@ -72,6 +74,10 @@
 		
 		document.getElementById('binaryConverterDownload').addEventListener('click', function() {
             downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/Binary%20Converter.exe');
+        });
+		
+		document.getElementById('cybrarianUtilityDownload').addEventListener('click', function() {
+            downloadFile('https://raw.githubusercontent.com/jsBookmarkTools/freeware/main/CYBRARIAN%20Utility.exe');
         });
     </script>
 </body>
